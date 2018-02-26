@@ -18,3 +18,8 @@ git reset --hard HEAD~100 退回往上100个版本
 版本恢复
 git reflog  查看每一次提交的commit id
 git reset --hard commit_id   恢复到指定版本
+
+
+远程仓库
+github中创建相同文件夹
+创建成功之后，提示代码复制粘贴
