@@ -29,3 +29,10 @@ github中创建相同文件夹
 
 
 git pull add origin  下载代码
+
+
+
+分支管理
+git checkout -b 分支名  b参数表示创建dev分支并切换分支
+ 相当于
+git branch 分支名 查看分支  git checkout 分支名 切换分支
