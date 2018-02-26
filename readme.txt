@@ -39,4 +39,9 @@ git branch 分支名 查看分支  git checkout 分支名 切换分支
 
 git branch -d 分支名  删除分支
 
-git merge 分支名  合并到master
+git merge 分支名  合并到mastergit
+
+
+创建分支gitdev1
+
+切换到分支master
