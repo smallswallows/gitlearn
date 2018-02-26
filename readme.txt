@@ -45,3 +45,5 @@ git merge 分支名  合并到mastergit
 创建分支gitdev1
 
 切换到分支master
+
+提交时分支冲突被git标记出来之后需要手动修改不同的地方，然后在提交
