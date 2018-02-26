@@ -26,3 +26,6 @@ github中创建相同文件夹
 
  git remote add origin https://github.com/smallswallows/gitlearn.git 关联远程库之后
  使用 git push -u origin master 第一次推送master分支所有内容；以后的每一次提交可以使用命令 git push origin master 推送最新版
+
+
+git pull add origin  下载代码
