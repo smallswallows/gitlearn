@@ -1,6 +1,10 @@
 ﻿git学习
 git是分布式版本管理工具
 
+git add  把文件添加到暂存区
+git commit 一次性把暂存区所有提交到分支，如果提交后，没对工作区做修改，工作区是干净的 clean
+
+
 git 每次 git commit -m "本次提交说明" 都需要先 git add 文件名
 
 版本退回
