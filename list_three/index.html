@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+<meta charset="utf-8" />
+    <link href="VerticalMenu.css" rel="stylesheet" />
+    <link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+    <script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="VerticalMenuJs.js"></script>
+    <style type="text/css">
+        .ver_list{
+            border:1px solid #304a95;
+            width: 300px;
+            margin-left: 20px;
+
+        }
+        .all_title{
+            font-size: 24px;
+            width: 300px;
+            text-align: center;
+            color: #55bfe9;
+            height: 60px;
+            line-height: 60px;
+            cursor: pointer;
+            border-bottom: 1px solid  #cdb0b0;
+        }
+        .all_title:hover{
+            background: #0E314D;
+        }
+        .com_bg{
+            background: #0E314D!important;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="ver_list" style="margin-top: 16px;">
+        <div class="all_title com_bg">全部</div>
+        <div class="VerticalMenu">
+            <div>
+                <div class="company">
+                    <span>车工科技</span>
+                </div>
+                <div name="xz" >
+                    <div>
+                        <div class="depart">
+                            <span>研发部</span>
+                            <i class="fa fa-angle-right fa-lg"></i>
+                        </div>
+                        <div name="xz1" class="depart_one">
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="depart">
+                            <span>销售部</span>
+                             <i class="fa fa-angle-right fa-lg"></i>
+                        </div>
+                        <div name="xz1" class="depart_one">
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="depart">
+                            <span>物流部</span>
+                             <i class="fa fa-angle-right fa-lg"></i>
+                        </div>
+                        <div name="xz1" class="depart_one">
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="company">
+                    <span>北方新兴</span>
+                </div>
+                <div name="xz" >
+                    <div>
+                         <div class="depart">
+                            <span>部门一</span>
+                             <i class="fa fa-angle-right fa-lg"></i>
+                        </div>
+                        <div name="xz1" class="depart_one">
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="company">
+                    <span>公司1</span>
+                </div>
+                <div name="xz" >
+                    <div>
+                         <div class="depart">
+                            <span>部门一</span>
+                             <i class="fa fa-angle-right fa-lg"></i>
+                        </div>
+                        <div name="xz1" class="depart_one">
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="company">
+                    <span>公司1</span>
+                </div>
+                <div name="xz" >
+                    <div>
+                         <div class="depart">
+                            <span>部门一</span>
+                             <i class="fa fa-angle-right fa-lg"></i>
+                        </div>
+                        <div name="xz1" class="depart_one">
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                            <div>
+                                <div><span>选项一</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>           
+        </div>
+    </div>
+    <div id="content"></div>
+    <!-- <div>444444</div> -->
+</body>
+<script type="text/javascript">
+    $('.all_title').click(function() {
+        $(this).addClass('com_bg');
+        // 清除选中样式
+        $(".VerticalMenu>div .company").css("background-color", "#fff");
+        $(".VerticalMenu>div .company").siblings("[name='xz']").stop().slideUp(400);
+        $(".VerticalMenu>div>div:last-child .depart").siblings("[name='xz1']").stop().slideUp(400);       
+    })
+
+
+
+    // 模拟多线程
+    console.log('p');
+
+    $.post("data.json", function (response) {
+      //response里大概有13万条数据
+    // console.log('jkojojko');
+         // loadAll(response.kl);
+        var html = "";
+        for (var i = 0; i < response.kl.length; i++) {
+
+            html += "<li>车牌号:" + response.kl[i].plate_num + " 地址:" + response.kl[i].address + "</li>";
+        }
+
+        $("#content").append(html);
+    });
+     
+    function loadAll(response) {
+      //将13万条数据分组， 每组500条，一共260组
+      var groups = group(response);
+      console.log(groups.length)
+      for (var i = 0; i < groups.length; i++) {
+        //闭包， 保持i值的正确性
+        window.setTimeout(function () {
+          var group = groups[i];
+          var index = i + 1;
+          return function () {
+            //分批渲染
+            loadPart( group, index );
+          }
+        }(), 1);
+      }
+    }
+ 
+    //数据分组函数（每组20条）
+    function group(data) {
+        // console.log(data.length)
+      var result = [];
+      var groupItem;
+      for (var i = 0; i < data.length; i++) {
+        if (i % 20 == 0) {
+          groupItem != null && result.push(groupItem);
+          groupItem = [];
+        }
+        groupItem.push(data[i]);
+      }
+      result.push(groupItem);
+      return result;
+    }
+ 
+    var currIndex = 0;   
+    //加载某一批数据的函数
+    function loadPart( group, index ) {
+        // console.log(currIndex);
+      var html = "";
+      for (var i = 0; i < group.length; i++) {
+        var item = group[i];
+
+
+        html += "<li>车牌号:" + item.plate_num + index + " 地址:" + item.address + index + "</li>";
+      }
+      //保证顺序不错乱
+      while (index - currIndex == 1) {
+        $("#content").append(html);
+        currIndex = index;
+      }
+    }
+
+
+    console.log('pllpp')
+</script>
+</html>

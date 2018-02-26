@@ -1,0 +1,64 @@
+﻿.VerticalMenu {
+  height: 100%;
+  width: 300px;
+  cursor: pointer;
+}
+.VerticalMenu > div {
+  width: 300px;
+}
+/*第一层公司*/
+.VerticalMenu > div > div:first-child {
+  text-align: center;
+  font-weight: bold;
+  height: 40px;
+  background-color: white;
+  line-height: 40px;
+  padding-right: 10px;
+  border-bottom: 1px solid  #cdb0b0;
+  transition: background-color 0.6s linear;
+}
+.VerticalMenu > div > div:first-child:hover {
+  background-color: #084C94!important;
+}
+
+/*第二层公司下部门*/
+.VerticalMenu > div > div:last-child{
+  width: 300px;
+  display: none;
+}
+.VerticalMenu > div > div:last-child > div > div:first-child {
+  font-size: 16px;
+  padding-left: 60px;
+  height: 40px;
+  background-color: white;
+  line-height: 40px;
+  padding-right: 10px;
+  border-bottom: 1px solid  #cdb0b0;
+  transition: background-color 0.6s linear;
+
+}
+.VerticalMenu > div > div:last-child > div > div:first-child:hover {
+  background-color: #79B5F4!important;
+}
+.VerticalMenu > div > div:last-child > div > div:first-child>span{
+  display: inline-block;
+  width: 200px;
+}
+/*第三层公司部门下车辆*/
+.VerticalMenu > div > div:last-child > div > div:last-child {
+  width: 300px;
+  margin:0 auto;
+  display: none;
+}
+.VerticalMenu > div > div:last-child > div > div:last-child>div{
+  font-size: 14px;
+  background-color: white;
+  transition: background-color 0.4s linear;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid  #CEE1F6;
+  
+}
+.VerticalMenu > div > div:last-child >div > div:last-child> div:hover {
+  background-color: #CEE1F6!important;
+}
