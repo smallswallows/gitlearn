@@ -36,3 +36,7 @@ git pull add origin  下载代码
 git checkout -b 分支名  b参数表示创建dev分支并切换分支
  相当于
 git branch 分支名 查看分支  git checkout 分支名 切换分支
+
+git branch -d 分支名  删除分支
+
+git merge 分支名  合并到master
