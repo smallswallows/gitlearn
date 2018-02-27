@@ -54,3 +54,5 @@ git tag v1.0
 
 git tag 查看标签
 git show v0.0  查看标签文字
+
+git tag -d v0.0 删除标签
