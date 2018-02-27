@@ -23,8 +23,8 @@ git reset --hard commit_id   恢复到指定版本
 远程仓库
 github中创建相同文件夹
 创建成功之后，提示代码复制粘贴
-
-git remote add origin   origin:默认仓库名https://github.com/smallswallows/gitlearn.git 关联远程库之后
+  origin:默认仓库名
+git remote add origin https://github.com/smallswallows/gitlearn.git 关联远程库之后
  使用 git push -u origin master 第一次推送master分支所有内容；以后的每一次提交可以使用命令 git push origin master 推送最新版
 
 
@@ -63,3 +63,15 @@ git remote rm origin  取消与远程库的关联
  git remote add origin https://gitee.com/smallswallows/gitlearn.git
 
 git push -u origin master
+
+同时关联码云与github
+git remote rm origin
+先关联github,
+git remote add github https://github.com/smallswallows/gitlearn.git
+关联码云
+git remote add gitee https://gitee.com/smallswallows/gitlearn.git
+
+git remote -v 查看远程库信息
+
+推送至 github   git push github master
+推送至 码云      git push gitee master
