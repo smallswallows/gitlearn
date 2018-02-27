@@ -47,3 +47,10 @@ git merge 分支名  合并到mastergit
 切换到分支master
 
 提交时分支冲突被git标记出来之后需要手动修改不同的地方，然后在提交
+
+
+创建标签（版本号）
+git tag v1.0
+
+git tag 查看标签
+git show v0.0  查看标签文字
