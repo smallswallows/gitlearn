@@ -64,7 +64,8 @@ git remote rm origin  取消与远程库的关联
 
 git push -u origin master
 
-同时关联码云与github
+同时关联码云与github 两者的仓库名区分开来，其它不变
+
 git remote rm origin
 先关联github,
 git remote add github https://github.com/smallswallows/gitlearn.git
@@ -75,3 +76,4 @@ git remote -v 查看远程库信息
 
 推送至 github   git push github master
 推送至 码云      git push gitee master
+
