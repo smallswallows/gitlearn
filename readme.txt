@@ -56,3 +56,6 @@ git tag 查看标签
 git show v0.0  查看标签文字
 
 git tag -d v0.0 删除标签
+
+
+git remote rm origin  取消与远程库的关联
