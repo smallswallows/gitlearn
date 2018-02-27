@@ -57,5 +57,9 @@ git show v0.0  查看标签文字
 
 git tag -d v0.0 删除标签
 
+如何与码云建立连接
+git remote rm origin  取消与github远程库的关联
 
-git remote rm origin  取消与远程库的关联
+ git remote add origin https://gitee.com/smallswallows/gitlearn.git
+
+git push -u origin master
